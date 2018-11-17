@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.47" />
+    <meta name="description" content="DragonFly Documentation">
+<meta name="author" content="Team Dragonfly">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>APIs Provided by Supernode :: DragonFly Documentation</title>
+
+    
+    <link href="/css/nucleus.css?1542412592" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1542412592" rel="stylesheet">
+    <link href="/css/hybrid.css?1542412592" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1542412592" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1542412592" rel="stylesheet">
+    <link href="/css/auto-complete.css?1542412592" rel="stylesheet">
+    <link href="/css/theme.css?1542412592" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1542412592" rel="stylesheet">
+    
+      <link href="/css/theme-dragonfly.css?1542412592" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1542412592"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/api_reference/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="https://raw.githubusercontent.com/aliware-os/dragonfly-test/gh-pages/images/logo.png"  alt="Dragonfly Logo" />
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1542412592"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1542412592"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/d7y.io";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1542412592"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/onboarding/" title="Before Starting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/onboarding/">
+          <b>0. </b>Before Starting
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/" title="Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/overview/">
+          <b>1. </b>Overview
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/what_is_dragonfly/" title="What Is Dragonfly?" class="dd-item ">
+        <a href="/overview/what_is_dragonfly/">
+        What Is Dragonfly?
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/terminology/" title="Terminology" class="dd-item ">
+        <a href="/overview/terminology/">
+        Terminology
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/quick_start/" title="Quick Start" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/quick_start/">
+          <b>2. </b>Quick Start
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/user_guide/" title="User Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/user_guide/">
+          <b>3. </b>User Guide
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/user_guide/install_server/" title="Installing Server" class="dd-item ">
+        <a href="/user_guide/install_server/">
+        Installing Server
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/user_guide/install_client/" title="Installing Client" class="dd-item ">
+        <a href="/user_guide/install_client/">
+        Installing Client
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/user_guide/download_files/" title="Downloading Files" class="dd-item ">
+        <a href="/user_guide/download_files/">
+        Downloading Files
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/user_guide/supernode_configuration/" title="Supernode Configuration" class="dd-item ">
+        <a href="/user_guide/supernode_configuration/">
+        Supernode Configuration
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cli_reference/" title="CLI Reference" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cli_reference/">
+          <b>4. </b>CLI Reference
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cli_reference/dfdaemon/" title="dfdaemon" class="dd-item ">
+        <a href="/cli_reference/dfdaemon/">
+        dfdaemon
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cli_reference/dfget/" title="dfget" class="dd-item ">
+        <a href="/cli_reference/dfget/">
+        dfget
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/api_reference/" title="APIs Provided by Supernode" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/api_reference/">
+          <b>5. </b>API Reference
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/faq/" title="FAQ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/faq/">
+          <b>6. </b>FAQ
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://d7y.io"><i class='fab fa-fw fa-github'></i> View on Github</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://d7y.io/roadmap"><i class='fas fa-fw fa-map-signs'></i> Roadmap</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/alibaba/Dragonfly/edit/master/docs/api_reference/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Dragonfly</a> > APIs Provided by Supernode
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#registration">Registration</a>
+<ul>
+<li><a href="#parameters">Parameters</a></li>
+<li><a href="#response">Response</a></li>
+</ul></li>
+<li><a href="#get-task">Get Task</a>
+<ul>
+<li><a href="#parameters-1">Parameters</a></li>
+<li><a href="#response-1">Response</a></li>
+</ul></li>
+<li><a href="#peer-progress">Peer Progress</a>
+<ul>
+<li><a href="#parameters-2">Parameters</a></li>
+<li><a href="#response-2">Response</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>APIs Provided by Supernode</h1>
+          
+
+        
+
+
+<p>This topic explains how to use the APIs provided by the supernode (the cluster manager).
+</p>
+
+<h2 id="registration">Registration</h2>
+
+<pre><code>POST /peer/registry
+</code></pre>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>Parameters are encodeds as <code>application/x-www-form-urlencoded</code>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cid</td>
+<td>String</td>
+<td>The client ID.</td>
+</tr>
+
+<tr>
+<td>ip</td>
+<td>String (IPv4)</td>
+<td>The client IP address.</td>
+</tr>
+
+<tr>
+<td>hostName</td>
+<td>String</td>
+<td>The hostname of the client.</td>
+</tr>
+
+<tr>
+<td>superNodeIp</td>
+<td>String (IPv4)</td>
+<td>The IP address of the registered supernode.</td>
+</tr>
+
+<tr>
+<td>port</td>
+<td>Integer</td>
+<td>The port which the client opens for P2P downloading.</td>
+</tr>
+
+<tr>
+<td>callSystem</td>
+<td>String</td>
+<td>The caller identifier.</td>
+</tr>
+
+<tr>
+<td>version</td>
+<td>String</td>
+<td>The client version.</td>
+</tr>
+
+<tr>
+<td>dfdaemon</td>
+<td>Boolean</td>
+<td>Tells whether it is a call from dfdaemon.</td>
+</tr>
+
+<tr>
+<td>path</td>
+<td>String</td>
+<td>The service path which the client offers.</td>
+</tr>
+
+<tr>
+<td>rawUrl</td>
+<td>String</td>
+<td>The resource URL provided by command line parameter.</td>
+</tr>
+
+<tr>
+<td>taskUrl</td>
+<td>String</td>
+<td>The resource URL.</td>
+</tr>
+
+<tr>
+<td>md5</td>
+<td>String</td>
+<td>The MD5 checksum for the resource. Optional.</td>
+</tr>
+
+<tr>
+<td>identifier</td>
+<td>String</td>
+<td>The resource identifer.</td>
+</tr>
+
+<tr>
+<td>headers</td>
+<td>Map</td>
+<td>Extra HTTP headers to be sent to the raw URL.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Upon receiving a request of registration from the client, the supernode constructs a new instance of based on the information provided by parameters. Specifically, it generates a task with <code>taskId</code> based on <code>rawUrl</code>, <code>md5</code>, and <code>identifier</code>.</p>
+
+<p>Then the task is stored in the memory cache. Meanwhile, the supernode retrieves extra information such as the <code>content-length</code> which normally would be set. The <code>pieceSize</code> is calculated as per the following strategy:</p>
+
+<ol>
+<li>If the total size is less than 200MB, then the piece size is 4MB by default.</li>
+<li>Otherwise, it equals to the smaller value between <code>(${totalSize} / 100MB) + 2</code> MB and 15MB.</li>
+</ol>
+
+<p>Next, the peer information along with the task will be recorded:</p>
+
+<ol>
+<li>The peer<ip, cid, hostname> will be saved.</li>
+<li>The task<taskId, cid, pieceSize, port, path> will be saved.</li>
+</ol>
+
+<p>The last step is to trigger a progress.</p>
+
+<h3 id="response">Response</h3>
+
+<p>An example response:</p>
+
+<pre><code class="language-json">{
+  &quot;code&quot;: 200,
+  &quot;data&quot;: {
+    &quot;fileLength&quot;: 687481,
+    &quot;pieceSize&quot;: 4194304,
+    &quot;taskId&quot;: &quot;ba270626349198840d0255de8358b6c93fe6d57d922d036fbf40bcf3499f44a8&quot;
+  }
+}
+</code></pre>
+
+<p>Other possible values of <code>code</code> in the response include:</p>
+
+<ul>
+<li><code>606</code>: The task ID already exists.</li>
+<li><code>607</code>: The URL is invalid.</li>
+<li><code>608</code> or <code>609</code>: Authentication required.</li>
+</ul>
+
+<h2 id="get-task">Get Task</h2>
+
+<pre><code>GET /peer/task
+</code></pre>
+
+<h3 id="parameters-1">Parameters</h3>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>superNode</td>
+<td>String (IPv4)</td>
+<td>The IP address of the super node.</td>
+</tr>
+
+<tr>
+<td>dstCID</td>
+<td>String</td>
+<td>The destination client ID.</td>
+</tr>
+
+<tr>
+<td>range</td>
+<td>String</td>
+<td>Byte range.</td>
+</tr>
+
+<tr>
+<td>status</td>
+<td>Integer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>result</td>
+<td>Integer</td>
+<td></td>
+</tr>
+
+<tr>
+<td>taskId</td>
+<td>String</td>
+<td>The task ID.</td>
+</tr>
+
+<tr>
+<td>srcCID</td>
+<td>String</td>
+<td>The source client ID.</td>
+</tr>
+</tbody>
+</table>
+
+<p>First, the supernode will analyze the <code>status</code> and <code>result</code>.</p>
+
+<ul>
+<li><code>Running</code>: if <code>status == 701</code>.</li>
+<li><code>Success</code>: if <code>status == 702</code> and <code>result == 501</code>.</li>
+<li><code>Fail</code>: if <code>status == 702</code> and <code>result == 500</code>.</li>
+<li><code>Wait</code>: if <code>status == 700</code>.</li>
+</ul>
+
+<p>In <code>Wait</code> status, the supernode will save the status to be <code>Running</code>.</p>
+
+<p>In <code>Running</code> status, the supernode will extract the piece status:</p>
+
+<ul>
+<li><code>Success</code>: if <code>result == 501</code>.</li>
+<li><code>Fail</code>: if <code>result == 500</code>.</li>
+<li><code>SemiSuc</code>: if <code>result == 503</code>.</li>
+</ul>
+
+<p><strong>Tip:</strong> <code>result == 502</code> suggests invalid code.</p>
+
+<p>Then the supernode updates the progress for this specific task, and checks the status of  the task and the peers. After this, the supernode tells the client which peer has enough details to download another piece. Otherwise, it fails.</p>
+
+<h3 id="response-1">Response</h3>
+
+<p>An example resonse:</p>
+
+<pre><code class="language-json">{
+  &quot;code&quot;: 602,
+  &quot;msg&quot;: &quot;client sucCount:0,cdn status:Running,cdn sucCount: 0&quot;
+}
+</code></pre>
+
+<p>This example response means that the client has to wait, since no peer can serve this piece now. If there is a peer which can serve this request, the response will be something like:</p>
+
+<pre><code class="language-json">{
+  &quot;code&quot;: 601,
+  &quot;data&quot;: [
+    {
+      &quot;cid&quot;: &quot;cdnnode:10.148.177.242~ba270626349198840d0255de8358b6c93fe6d57d922d036fbf40bcf3499f44a8&quot;,
+      &quot;downLink&quot;: &quot;20480&quot;,
+      &quot;path&quot;: &quot;/qtdown/ba2/ba270626349198840d0255de8358b6c93fe6d57d922d036fbf40bcf3499f44a8&quot;,
+      &quot;peerIp&quot;: &quot;10.148.177.242&quot;,
+      &quot;peerPort&quot;: 8001,
+      &quot;pieceMd5&quot;: &quot;d78ef0af9e95e880fa583b41cf5ad791:687486&quot;,
+      &quot;pieceNum&quot;: 0,
+      &quot;pieceSize&quot;: 4194304,
+      &quot;range&quot;: &quot;0-4194303&quot;
+    }
+  ]
+}
+</code></pre>
+
+<h2 id="peer-progress">Peer Progress</h2>
+
+<pre><code>GET /peer/piece/suc
+</code></pre>
+
+<h3 id="parameters-2">Parameters</h3>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>dstCID</td>
+<td>String</td>
+<td>The destination client ID.</td>
+</tr>
+
+<tr>
+<td>pieceRange</td>
+<td>String</td>
+<td>Byte range.</td>
+</tr>
+
+<tr>
+<td>taskId</td>
+<td>String</td>
+<td>The task ID.</td>
+</tr>
+
+<tr>
+<td>cID</td>
+<td>String</td>
+<td>The client ID.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="response-2">Response</h3>
+
+<p>An example response:</p>
+
+<pre><code class="language-json">{
+  &quot;code&quot;: 200,
+  &quot;msg&quot;: &quot;success&quot;
+}
+</code></pre>
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/cli_reference/dfget/" title="dfget"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/faq/" title="FAQ" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1542412592"></script>
+    <script src="/js/perfect-scrollbar.min.js?1542412592"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1542412592"></script>
+    <script src="/js/jquery.sticky.js?1542412592"></script>
+    <script src="/js/featherlight.min.js?1542412592"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1542412592"></script>
+    <script src="/js/highlight.pack.js?1542412592"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1542412592"></script>
+    <script src="/js/learn.js?1542412592"></script>
+    <script src="/js/hugo-learn.js?1542412592"></script>
+
+    <link href="/mermaid/mermaid.css?1542412592" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1542412592"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
